@@ -3,183 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>ROUTE｜兵庫県高校受験の質問をLINEで</title>
-<meta name="description" content="高校受験の「これ、うちの場合どう？」をLINEで1問から。兵庫県高校受験に特化した保護者向けQ&A。初回1問無料。">
-<meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#0d3970">
+<title>ROUTE｜兵庫県高校受験Q&A</title>
+<meta name="description" content="高校受験の「これ、うちの場合どう？」をLINEで1問から。兵庫県高校受験専門の保護者向けQ&A。初回1問無料。">
+<meta name="theme-color" content="#0867b9">
 <link rel="icon" href="https://jukensoudan-route.github.io/assets/route-logo.webp" type="image/webp">
 <style>
-:root{--navy:#0d3970;--blue:#267ee6;--sky:#eaf5ff;--ice:#f6faff;--yellow:#ffe35b;--yellow2:#ffd52f;--ink:#14283a;--body:#40576a;--muted:#6d8190;--line:#d5e5f3;--green:#087e61;--white:#fff;--shadow:0 18px 45px rgba(18,65,112,.13)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--body);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}
-.shell{width:min(1060px,calc(100% - 30px));margin-inline:auto}
-.testnote{padding:5px 12px;background:#dff0ff;color:#155fa7;text-align:center;font-size:.69rem;font-weight:900}
-.sitehead{position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(213,229,243,.9);background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}
-.headin{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{display:flex;align-items:center;gap:8px;min-width:0}.logo img{width:44px;height:44px;object-fit:contain}.logo span{color:var(--navy);font-size:.8rem;font-weight:950;line-height:1.25}
-.links{display:flex;align-items:center;gap:18px;color:var(--navy);font-size:.8rem;font-weight:900}
-.menubtn{display:none;width:40px;height:40px;border:2px solid var(--blue);border-radius:50%;background:#fff;color:var(--blue);font-size:1.05rem}
-.primary,.secondary,.consultbtn{display:inline-flex;min-height:52px;align-items:center;justify-content:center;padding:11px 20px;border:2px solid var(--navy);border-radius:999px;font-weight:1000;text-align:center;box-shadow:none}
-.primary{background:var(--yellow);color:var(--navy)}.primary:hover{background:var(--yellow2)}
-.secondary{background:#fff;color:var(--navy)}
-.consultbtn{border-color:#64baa4;background:#fff;color:var(--green)}
-.small{min-height:42px;padding:7px 15px}
-.heroart{padding:0;background:#daf2ff}.heroart img{width:100%;height:auto}
-section{padding:54px 0}
-.opening{position:relative;overflow:hidden;background:var(--navy);color:#fff}
-.opening:before,.opening:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.055)}
-.opening:before{width:260px;height:260px;right:-90px;top:-110px}.opening:after{width:170px;height:170px;left:-80px;bottom:-95px}
-.openinner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:32px}
-.label{display:inline-block;padding:4px 10px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.72rem;font-weight:950}
-.opening h1{max-width:760px;margin:10px 0 9px;color:#fff;font-size:clamp(2rem,4.8vw,3.65rem);line-height:1.15;letter-spacing:-.045em}
-.opening h1 mark{padding:0 .06em;background:transparent;color:var(--yellow)}
-.opening .lead{max-width:700px;margin:0;color:#e4f1ff;font-size:1.02rem;font-weight:750}
-.openactions{display:flex;gap:9px;flex-wrap:wrap;margin-top:19px}.opening .secondary{border-color:#fff;background:transparent;color:#fff}
-.quickfacts{display:grid;gap:9px;min-width:190px}.quickfacts div{padding:12px 16px;border:1px solid rgba(255,255,255,.24);border-radius:15px;background:rgba(255,255,255,.08);font-size:.82rem;font-weight:900;text-align:center}.quickfacts strong{display:block;color:var(--yellow);font-size:1.03rem}
-.tiny{margin:9px 0 0;color:#c9ddf1;font-size:.74rem}
-.sectionhead{max-width:720px;margin:0 auto 25px;text-align:center}.sectionhead .en{display:block;color:var(--blue);font-size:.68rem;font-weight:1000;letter-spacing:.14em}.sectionhead h2{margin:5px 0 6px;color:var(--ink);font-size:clamp(1.55rem,3.2vw,2.35rem);line-height:1.35;letter-spacing:-.025em}.sectionhead p{margin:0;color:var(--muted)}
-.examples{background:#fff}.questionrail{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
-.question{position:relative;display:flex;min-height:122px;flex-direction:column;justify-content:space-between;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--ice);color:var(--ink);font-size:.92rem;font-weight:950}
-.question:before{content:"Q";display:grid;width:31px;height:31px;place-items:center;margin-bottom:11px;border-radius:10px;background:var(--blue);color:#fff;font-weight:1000}
-.question:after{content:"質問する →";margin-top:9px;color:var(--blue);font-size:.73rem}
-.question:hover{border-color:var(--blue);transform:translateY(-2px)}
-.questionnote{margin:18px 0 0;text-align:center;color:var(--navy);font-weight:900}
-.free{padding:32px 0;background:var(--yellow);color:var(--navy)}
-.freein{display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.free h2{margin:0;font-size:clamp(1.55rem,3.2vw,2.25rem);line-height:1.3}.free p{margin:3px 0 0;font-weight:750}.free .primary{border-color:var(--navy);background:var(--navy);color:#fff;min-width:260px}
-.use{background:var(--ice)}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:step}
-.howcard{position:relative;padding:22px 24px 20px;border-block:1px solid var(--line);background:#fff}
-.howcard:first-child{border-left:1px solid var(--line);border-radius:22px 0 0 22px}.howcard:last-child{border-right:1px solid var(--line);border-radius:0 22px 22px 0}.howcard+.howcard{border-left:1px dashed #bdd5e9}
-.howcard:before{counter-increment:step;content:counter(step);display:grid;width:36px;height:36px;place-items:center;border-radius:50%;background:var(--navy);color:#fff;font-weight:1000}
-.howcard h3{margin:11px 0 4px;color:var(--ink);font-size:1rem}.howcard p{margin:0;color:var(--muted);font-size:.86rem}
-.flowpic{margin-top:16px;padding:10px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}.flowpic img{width:100%;border-radius:13px}
-.real{background:#fff}.realgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
-.phones{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;border-radius:28px;background:var(--navy);box-shadow:var(--shadow)}.phones img{border-radius:15px;background:#fff}
-.answer{padding:23px;border:1px solid var(--line);border-radius:25px;background:var(--sky)}.answer h3{margin:0 0 11px;color:var(--ink)}
-.bubbleq{max-width:90%;margin-left:auto;padding:11px 13px;border-radius:16px 16px 3px 16px;background:#82df52;color:#23402b;font-size:.88rem;font-weight:800}
-.bubblea{max-width:96%;margin-top:10px;padding:13px;border-radius:16px 16px 16px 3px;background:#fff;color:var(--body);font-size:.86rem}.bubblea b{color:var(--blue)}
-.answer small{display:block;margin-top:10px;color:var(--muted)}
-.reasons{background:var(--navy);color:#dcecff}.reasons .sectionhead .en{color:var(--yellow)}.reasons .sectionhead h2{color:#fff}.reasons .sectionhead p{color:#c9ddef}
-.reasonlist{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.reason{padding:21px;border:1px solid rgba(255,255,255,.18);border-radius:21px;background:rgba(255,255,255,.07)}.reason span{display:block;color:var(--yellow);font-size:1.55rem;font-weight:1000}.reason h3{margin:3px 0 5px;color:#fff;font-size:1rem}.reason p{margin:0;font-size:.85rem}
-.pricing{background:#fff}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:900px;margin:auto}.plan{position:relative;padding:22px 15px;border:1px solid var(--line);border-radius:22px;background:#fff;text-align:center}.plan.best{border:2px solid var(--blue);background:var(--ice)}.badge{position:absolute;top:-12px;left:50%;padding:3px 13px;border-radius:999px;background:var(--blue);color:#fff;font-size:.7rem;font-weight:1000;transform:translateX(-50%)}.plan h3{margin:4px 0;color:var(--ink);font-size:.95rem}.yen{color:var(--navy);font-size:2rem;font-weight:1000}.plan p{margin:2px 0 0;color:var(--muted);font-size:.78rem}.terms{max-width:720px;margin:15px auto 0;padding:10px 13px;border-radius:12px;background:var(--sky);text-align:center;color:var(--navy);font-size:.82rem;font-weight:900}
-.consult{padding:44px 0;background:#edf9f5;border-block:1px solid #ceeae2}.consultbox{display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:25px}.subservice{display:inline-flex;padding:4px 10px;border:1px solid #9fd4c5;border-radius:999px;background:#fff;color:var(--green);font-size:.7rem;font-weight:1000}.consult h2{margin:7px 0;color:var(--ink);font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.4}.consult p{margin:0 0 11px}.fees{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}.fees span{padding:5px 9px;border:1px solid #b8e0d5;border-radius:999px;background:#fff;color:var(--green);font-size:.75rem;font-weight:900}.consult img{border:1px solid #b8ded4;border-radius:20px;box-shadow:var(--shadow)}
-.faqs{background:#fff}.accordion{display:grid;gap:8px;max-width:820px;margin:auto}.accordion details{overflow:hidden;border:1px solid var(--line);border-radius:15px;background:#fff}.accordion summary{position:relative;padding:14px 45px 14px 16px;cursor:pointer;list-style:none;color:var(--ink);font-weight:900}.accordion summary::-webkit-details-marker{display:none}.accordion summary:after{content:"＋";position:absolute;right:16px;color:var(--blue)}.accordion details[open] summary:after{content:"−"}.accordion p{margin:0;padding:0 16px 15px;color:var(--muted);font-size:.88rem}
-.last{padding:54px 0;background:linear-gradient(135deg,#eaf5ff,#fff);text-align:center}.lastbox{padding:35px 20px;border:2px solid var(--navy);border-radius:28px;background:#fff;box-shadow:var(--shadow)}.last h2{margin:0 0 5px;color:var(--navy);font-size:clamp(1.65rem,3.4vw,2.45rem)}.last p{margin:0 0 16px}
-.footer{padding:24px 0 96px;background:#082a51;color:#d7e7f5;font-size:.76rem}.footin{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.footlinks{display:flex;gap:12px}.footlinks a{text-decoration:underline;text-underline-offset:3px}
-.sticky{display:none}
-@media(max-width:860px){.links{display:none}.menubtn{display:block}.links.open{position:absolute;top:64px;left:15px;right:15px;display:flex;flex-direction:column;align-items:stretch;padding:14px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}.openinner{grid-template-columns:1fr}.quickfacts{grid-template-columns:repeat(3,1fr)}.questionrail{grid-template-columns:repeat(2,1fr)}.realgrid,.consultbox{grid-template-columns:1fr}.sticky{position:fixed;z-index:80;right:0;bottom:0;left:0;display:block;padding:7px 11px calc(7px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}.sticky .primary{width:100%;min-height:50px}}
-@media(max-width:600px){.shell{width:min(100% - 22px,1060px)}.headin{min-height:58px}.logo img{width:39px;height:39px}.logo span{font-size:.69rem}.menubtn{width:38px;height:38px}.links.open{top:58px}section{padding:38px 0}.opening{padding:35px 0}.opening h1{font-size:1.92rem}.opening .lead{font-size:.9rem}.openactions{display:grid}.openactions a{width:100%}.quickfacts{grid-template-columns:1fr 1fr;gap:7px}.quickfacts div:last-child{grid-column:1/-1}.questionrail{display:flex;overflow-x:auto;gap:9px;margin-inline:-11px;padding:2px 11px 13px;scroll-snap-type:x mandatory}.question{min-width:78vw;min-height:112px;scroll-snap-align:center}.free{padding:27px 0}.freein{grid-template-columns:1fr}.free .primary{width:100%}.sectionhead{margin-bottom:18px}.sectionhead h2{font-size:1.48rem}.sectionhead p{font-size:.87rem}.three{grid-template-columns:1fr;gap:8px}.howcard,.howcard:first-child,.howcard:last-child{border:1px solid var(--line);border-radius:17px}.howcard+.howcard{border-left:1px solid var(--line)}.howcard{display:grid;grid-template-columns:38px 1fr;column-gap:9px;padding:13px}.howcard h3{align-self:end;margin:0}.howcard p{grid-column:2}.phones{padding:10px;border-radius:20px}.answer{padding:17px}.reasonlist{grid-template-columns:1fr;gap:8px}.reason{padding:15px}.plans{grid-template-columns:1fr;gap:9px}.plan{padding:15px}.yen{font-size:1.7rem}.consult{padding:35px 0}.last{padding:39px 0}.lastbox{padding:27px 15px}.footer{padding-bottom:92px}}
+:root{--blue:#0875d1;--deep:#00529b;--navy:#063e76;--yellow:#ffe449;--ink:#12334e;--muted:#5d7485;--line:#d7e6f2;--pale:#f4faff;--white:#fff;--green:#16b96b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:auto}button{font:inherit}
+.page{width:min(100%,980px);margin:auto;background:#fff;box-shadow:0 0 45px rgba(7,55,100,.08)}
+.wrap{width:min(100% - 34px,850px);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.head{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:9px}.brand img{width:48px;height:48px;object-fit:contain}.brand b{font-size:.83rem;color:var(--navy)}.menu{display:grid;place-items:center;width:43px;height:43px;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--navy);font-size:1.18rem;font-weight:900}
+.hero{background:#d9f1ff}.hero img{max-height:365px;object-fit:cover}
+.intro{position:relative;overflow:hidden;padding:34px 0 30px;background:linear-gradient(135deg,#075da9,#007ed9);color:#fff;text-align:center}.intro:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 80%,rgba(255,255,255,.13),transparent 22%),radial-gradient(circle at 92% 10%,rgba(255,255,255,.12),transparent 25%);pointer-events:none}.intro .wrap{position:relative}.eyebrow{font-size:.82rem;font-weight:900}.intro h1{margin:8px 0 15px;color:#fff;font-size:clamp(1.9rem,5vw,3.35rem);line-height:1.18;letter-spacing:-.035em}.intro h1 strong{display:block;color:var(--yellow);font-size:1.25em}.cta{display:inline-flex;min-height:54px;align-items:center;justify-content:center;gap:9px;padding:11px 25px;border:2px solid var(--yellow);border-radius:999px;background:var(--yellow);color:var(--navy);font-weight:1000;text-align:center}.cta.dark{border-color:var(--navy);background:var(--navy);color:#fff}.cta.outline{border-color:#7bc6ad;background:#fff;color:#08795d}.lineicon{display:grid;width:28px;height:28px;place-items:center;border-radius:8px;background:var(--green);color:#fff;font-size:.62rem;font-weight:1000}
+section{padding:37px 0}.title{text-align:center;margin-bottom:18px}.title h2{margin:0;color:var(--navy);font-size:clamp(1.4rem,3vw,2rem);line-height:1.35}.title h2:before,.title h2:after{content:"／";color:var(--yellow);margin:0 5px}.title p{margin:5px 0 0;color:var(--muted);font-size:.88rem}
+.questions{background:#fff}.qlist{display:grid;gap:9px;max-width:760px;margin:auto}.qitem{display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:11px;min-height:72px;padding:10px 15px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 5px 15px rgba(12,78,136,.08)}.qicon{display:grid;width:38px;height:38px;place-items:center;border-radius:50%;background:linear-gradient(135deg,#42a8f4,#0875d1);color:#fff;font-size:1.15rem;font-weight:1000}.qtext{font-weight:950;line-height:1.35}.qgo{padding-left:13px;border-left:1px solid var(--line);color:var(--blue);font-size:.82rem;font-weight:950}
+.freeband{padding:18px 0;background:var(--yellow)}.freein{display:flex;align-items:center;justify-content:space-between;gap:15px}.freecopy{color:var(--navy);font-size:clamp(1.25rem,3vw,1.75rem);font-weight:1000}.freecopy:before,.freecopy:after{content:"／";margin:0 5px;color:#0a74ca}
+.steps{background:linear-gradient(#eef9ff,#f9fdff)}.stepgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{position:relative;padding:18px 12px;border-radius:18px;background:#fff;text-align:center;box-shadow:0 6px 18px rgba(0,78,145,.08)}.step+.step:before{content:"›";position:absolute;left:-12px;top:43%;color:var(--blue);font-size:1.7rem}.stepno{display:grid;width:48px;height:48px;place-items:center;margin:0 auto 9px;border-radius:50%;background:linear-gradient(135deg,#42a8f4,#0875d1);color:#fff;font-size:.72rem;font-weight:1000;line-height:1.05}.stepno b{display:block;font-size:1.15rem}.stepicon{height:34px;margin-bottom:5px;color:var(--blue);font-size:1.8rem}.step h3{margin:0 0 3px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.76rem}
+.real{padding-top:32px;background:#fff}.realgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:17px;align-items:center}.phones{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:end}.phone{padding:8px 7px 0;border:5px solid #17212b;border-bottom:0;border-radius:28px 28px 0 0;background:#17212b;overflow:hidden}.phone img{border-radius:18px 18px 0 0}.chatpromo{text-align:center}.scribble{color:#086cc1;font-size:clamp(1.35rem,3vw,2rem);font-weight:950;line-height:1.25;transform:rotate(-4deg)}.people{display:flex;align-items:end;justify-content:center;gap:8px;margin-top:14px}.person{position:relative;width:84px;height:108px}.headcircle{position:absolute;left:22px;top:0;width:41px;height:41px;border:3px solid var(--navy);border-radius:50%;background:#fff4df}.bodyshape{position:absolute;left:5px;bottom:0;width:74px;height:72px;border:3px solid var(--navy);border-radius:35px 35px 8px 8px;background:#e2f5ff}.person.parent .bodyshape{background:var(--yellow)}.person:after{content:"";position:absolute;left:31px;top:15px;width:22px;height:4px;border-radius:5px;background:var(--navy)}.bubble{display:inline-block;margin-top:9px;padding:7px 12px;border-radius:999px;background:#dff7f1;color:var(--navy);font-size:.82rem;font-weight:900}
+.reasons{padding:30px 0;background:linear-gradient(135deg,#064f91,#006dbd);color:#fff}.reasons .title h2{color:#fff}.reasonrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.reason{padding:14px 11px;border-radius:15px;background:#fff;color:var(--ink);text-align:center}.reasonnum{color:#0d72c6;font-size:1.25rem;font-weight:1000}.reasonicon{font-size:1.4rem}.reason h3{margin:3px 0;font-size:.9rem;line-height:1.3}.reason p{margin:0;color:var(--muted);font-size:.7rem}
+.services{padding:28px 0;background:#fff}.servicegrid{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.pricebox,.consultbox{padding:16px;border:1px solid var(--line);border-radius:17px;background:#fff}.consultbox{background:#effbf6}.boxhead{margin:0 0 11px;text-align:center;color:var(--navy);font-size:1.05rem}.pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.price{position:relative;padding:12px 5px;border:1px solid var(--line);border-radius:13px;text-align:center}.price:first-child{border:2px solid #36b986;background:#f0fcf7}.recommend{position:absolute;top:-10px;left:50%;padding:2px 8px;border-radius:999px;background:#27ba8b;color:#fff;font-size:.57rem;font-weight:900;transform:translateX(-50%)}.price b{display:block;font-size:.75rem}.amount{margin:3px 0;color:var(--navy);font-size:1.42rem;font-weight:1000}.price small{display:block;color:var(--muted);font-size:.59rem}.pay{margin-top:4px;color:#0874cf;font-size:.62rem;font-weight:900}.consultbox{text-align:center}.consultbox p{margin:0 0 10px;color:var(--muted);font-size:.76rem}.monitor{font-size:1.4rem;color:var(--green)}
+.faq{padding:28px 0;background:#f5fbff}.faqlist{display:grid;gap:7px}.faq details{overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#fff}.faq summary{position:relative;padding:11px 40px 11px 48px;cursor:pointer;list-style:none;font-size:.84rem;font-weight:900}.faq summary::-webkit-details-marker{display:none}.faq summary:before{content:"Q";position:absolute;left:12px;top:8px;display:grid;width:27px;height:27px;place-items:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:1000}.faq summary:after{content:"⌄";position:absolute;right:14px;color:var(--navy);font-size:1.1rem}.faq details[open] summary:after{content:"⌃"}.faq p{margin:0;padding:0 15px 13px 48px;color:var(--muted);font-size:.8rem}
+.final{padding:31px 0 34px;background:linear-gradient(135deg,#064f91,#006dbd);color:#fff;text-align:center}.final p{margin:11px 0 0;font-size:.72rem}.final .cta{min-width:330px}
+footer{padding:18px 0 88px;background:#052e57;color:#dcecff;text-align:center;font-size:.7rem}.sticky{display:none}
+@media(max-width:700px){.page{box-shadow:none}.wrap{width:calc(100% - 24px)}.head{height:62px}.brand img{width:42px;height:42px}.brand b{font-size:.69rem}.hero img{max-height:none}.intro{padding:27px 0 25px}.intro h1{font-size:1.75rem}.intro h1 strong{font-size:1.28em}.intro .cta{width:92%;min-height:50px}section{padding:30px 0}.title{margin-bottom:14px}.title h2{font-size:1.3rem}.qitem{grid-template-columns:38px 1fr auto;min-height:66px;padding:9px 11px}.qtext{font-size:.88rem}.qgo{font-size:.72rem}.freeband{padding:14px 0}.freein{gap:9px}.freecopy{font-size:1.08rem}.freein .cta{min-height:43px;padding:7px 14px;font-size:.78rem}.stepgrid{gap:7px}.step{padding:12px 6px}.step+.step:before{left:-8px}.stepno{width:42px;height:42px}.stepicon{height:29px;font-size:1.5rem}.step h3{font-size:.85rem}.step p{font-size:.63rem}.realgrid{grid-template-columns:1.22fr .78fr;gap:9px}.phone{padding:5px 4px 0;border-width:4px;border-bottom:0;border-radius:19px 19px 0 0}.phone img{border-radius:12px 12px 0 0}.scribble{font-size:1.05rem}.people{transform:scale(.82);margin-inline:-20px}.reasonrow{gap:6px}.reason{padding:10px 5px}.reason h3{font-size:.75rem}.reason p{font-size:.59rem}.servicegrid{grid-template-columns:1.55fr .85fr;gap:7px}.pricebox,.consultbox{padding:10px 7px}.boxhead{font-size:.87rem}.pricegrid{gap:4px}.price{padding:10px 2px}.amount{font-size:1.05rem}.price small{font-size:.51rem}.consultbox p{font-size:.61rem}.consultbox .cta{min-height:34px;padding:4px 8px;font-size:.65rem}.final .cta{width:92%;min-width:0}.sticky{position:fixed;z-index:70;left:0;right:0;bottom:0;display:block;padding:7px 11px calc(7px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(255,255,255,.95);backdrop-filter:blur(10px)}.sticky .cta{width:100%;min-height:49px}footer{padding-bottom:88px}}
+@media(max-width:390px){.intro h1{font-size:1.58rem}.freecopy{font-size:.96rem}.qgo{display:none}.qitem{grid-template-columns:36px 1fr}.step p{font-size:.58rem}.reason p{display:none}.servicegrid{grid-template-columns:1fr}.consultbox{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:7px;text-align:left}.consultbox .boxhead{margin:0}.consultbox p{margin:0}.people{transform:scale(.72)}}
 </style>
 </head>
-<body id="top">
-<div class="testnote">NEWページ｜新デザイン確認用</div>
-<header class="sitehead">
-  <div class="shell headin">
-    <a class="logo" href="#top"><img src="https://jukensoudan-route.github.io/assets/route-logo.webp" alt="ROUTE"><span>兵庫県高校受験<br>保護者相談室 ROUTE</span></a>
-    <button class="menubtn" aria-label="メニューを開く" aria-expanded="false">☰</button>
-    <nav class="links"><a href="#examples">質問例</a><a href="#use">使い方</a><a href="#pricing">料金</a><a href="#consult">オンライン相談</a><a class="primary small" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">初回無料で質問</a></nav>
-  </div>
-</header>
-<main>
-  <section class="heroart"><img src="https://jukensoudan-route.github.io/assets/route-top-hero.webp?v=20260914-new" alt="兵庫県高校受験専門 ROUTE"></section>
+<body>
+<div class="page">
+<header><div class="wrap head"><a class="brand" href="#top"><img src="https://jukensoudan-route.github.io/assets/route-logo.webp" alt="ROUTE"><b>兵庫県高校受験 保護者相談室 ROUTE</b></a><button class="menu" aria-label="メニュー">☰</button></div></header>
+<main id="top">
+<section class="hero"><img src="https://jukensoudan-route.github.io/assets/route-top-hero.webp?v=20260914-final" alt="兵庫県高校受験専門 ROUTE"></section>
 
-  <section class="opening">
-    <div class="shell openinner">
-      <div>
-        <span class="label">兵庫県高校受験・保護者向け</span>
-        <h1>高校受験の<br><mark>「これ、うちの場合どう？」</mark>を<br>LINEで1問から。</h1>
-        <p class="lead">学校選び、内申点、実力テスト、私立専願、受験日程。ネットの一般論ではなく、わが子の状況に合わせて聞けます。</p>
-        <div class="openactions"><a class="primary" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">初回無料で1問質問する</a><a class="secondary" href="#examples">質問例を見る</a></div>
-        <p class="tiny">営業時間 12:00〜24:00／月曜休業　営業時間内は目安5〜30分で返信</p>
-      </div>
-      <div class="quickfacts"><div><strong>初回1問</strong>無料</div><div><strong>兵庫県</strong>高校受験専門</div><div><strong>LINE</strong>で回答</div></div>
-    </div>
-  </section>
+<section class="intro"><div class="wrap"><div class="eyebrow">兵庫県高校受験・保護者向け</div><h1>高校受験の「これ、うちの場合どう？」を<strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問質問する　→</a></div></section>
 
-  <section id="examples" class="examples">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">QUESTION EXAMPLES</span><h2>今、気になっているのは<br>どれですか？</h2><p>近い質問を押すだけで、Q&Aへ進めます。</p></div>
-      <div class="questionrail">
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">この成績で、どの高校まで狙えますか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">今の内申点で志望校に足りていますか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">実力テストの順位をどう見ればいいですか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">私立専願と公立併願、どちらが合いますか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">志望校はいつまでに決めればいいですか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">学校説明会では何を確認すればいいですか？</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">受験日程の組み方を確認したいです。</a>
-        <a class="question" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">親として今、何をすればいいですか？</a>
-      </div>
-      <p class="questionnote">質問がまとまっていなくても、選択肢に沿って作れます。</p>
-    </div>
-  </section>
+<section class="questions"><div class="wrap"><div class="title"><h2>今、気になっているのはどれですか？</h2></div><div class="qlist">
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">この成績で、<br>どの高校まで狙えますか？</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">今の内申点で<br>志望校に足りていますか？</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">私立専願と公立併願、<br>どちらが合いますか？</span><span class="qgo">質問する →</span></a>
+</div></div></section>
 
-  <section class="free">
-    <div class="shell freein"><div><h2>初回の1問は、無料です。</h2><p>まず回答を見てから、続けるか決められます。</p></div><a class="primary" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">無料で質問してみる</a></div>
-  </section>
+<section class="freeband"><div class="wrap freein"><div class="freecopy">初回の1問は、無料です。</div><a class="cta dark" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>今すぐ質問する →</a></div></section>
 
-  <section id="use" class="use">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">HOW TO USE</span><h2>質問から回答まで、かんたん。</h2></div>
-      <div class="three"><div class="howcard"><h3>Q&Aを開く</h3><p>スマホから専用ページへ進みます。</p></div><div class="howcard"><h3>選んで送る</h3><p>学校名やテーマを選んで質問します。</p></div><div class="howcard"><h3>LINEで確認</h3><p>届いた回答をLINEで読めます。</p></div></div>
-      <div class="flowpic"><img src="https://jukensoudan-route.github.io/assets/qna-flow-6steps.webp?v=20260914-new" alt="ROUTE Q&Aの利用手順"></div>
-    </div>
-  </section>
+<section class="steps"><div class="wrap"><div class="title"><h2>かんたん3ステップで、すぐに相談できます</h2></div><div class="stepgrid">
+<div class="step"><div class="stepno">STEP<b>01</b></div><div class="stepicon">▣</div><h3>Q&Aを開く</h3><p>専用ページから<br>Q&Aを開きます。</p></div>
+<div class="step"><div class="stepno">STEP<b>02</b></div><div class="stepicon">☷</div><h3>選んで送る</h3><p>気になる質問を選んで<br>送信するだけ。</p></div>
+<div class="step"><div class="stepno">STEP<b>03</b></div><div class="stepicon">●</div><h3>LINEで確認</h3><p>専門の相談員から<br>回答が届きます。</p></div>
+</div></div></section>
 
-  <section class="real">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">REAL SCREEN</span><h2>実際のQ&A画面</h2><p>選択肢を選んでいくだけで、何を質問すればよいか分からない方も良い質問を作れます。</p></div>
-      <div class="realgrid">
-        <div class="phones"><img src="https://jukensoudan-route.github.io/assets/qa-screen-free-1.webp?v=20260914-new" alt="Q&A質問画面1"><img src="https://jukensoudan-route.github.io/assets/qa-screen-free-2.webp?v=20260914-new" alt="Q&A質問画面2"></div>
-        <div class="answer"><h3>これは回答例です</h3><div class="bubbleq">県立○○高校を受けたいのですが、この内申点で大丈夫ですか？</div><div class="bubblea"><b>ROUTE</b><br>内申点だけでなく、実力テスト・学区・選抜方法も合わせて整理します。今の位置と、次に確認することを分けてお答えします。</div><small>回答はLINEで届きます。</small></div>
-      </div>
-    </div>
-  </section>
+<section class="real"><div class="wrap"><div class="title"><h2>実際のQ&A画面イメージ</h2></div><div class="realgrid"><div class="phones"><div class="phone"><img src="https://jukensoudan-route.github.io/assets/qa-screen-free-1.webp?v=20260914-final" alt="Q&A画面1"></div><div class="phone"><img src="https://jukensoudan-route.github.io/assets/qa-screen-free-2.webp?v=20260914-final" alt="Q&A画面2"></div></div><div class="chatpromo"><div class="scribble">LINEで気軽に<br>プロに相談！</div><div class="bubble">スマホでかんたん！</div><div class="people"><div class="person"><span class="headcircle"></span><span class="bodyshape"></span></div><div class="person parent"><span class="headcircle"></span><span class="bodyshape"></span></div></div></div></div></div></section>
 
-  <section class="reasons">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">WHY ROUTE</span><h2>ROUTEを使う3つの理由</h2><p>検索では答えが出にくい「わが子の場合」を整理します。</p></div>
-      <div class="reasonlist"><div class="reason"><span>01</span><h3>兵庫県の受験に特化</h3><p>地域の制度や学校選びを踏まえて回答します。</p></div><div class="reason"><span>02</span><h3>1問から聞ける</h3><p>相談予約をせず、今知りたい疑問から使えます。</p></div><div class="reason"><span>03</span><h3>次の行動が分かる</h3><p>確認先や判断材料まで分かる形に整理します。</p></div></div>
-    </div>
-  </section>
+<section class="reasons"><div class="wrap"><div class="title"><h2>ROUTEを使う3つの理由</h2></div><div class="reasonrow"><div class="reason"><div class="reasonnum">01</div><div class="reasonicon">🎓</div><h3>兵庫県の<br>高校受験に特化</h3><p>地域の制度を踏まえて回答</p></div><div class="reason"><div class="reasonnum">02</div><div class="reasonicon">💬</div><h3>保護者の視点で<br>丁寧に回答</h3><p>ご家庭の状況に合わせます</p></div><div class="reason"><div class="reasonnum">03</div><div class="reasonicon">♥</div><h3>1問から気軽に<br>相談できる</h3><p>まず気になることから</p></div></div></div></section>
 
-  <section id="pricing" class="pricing">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">PRICE</span><h2>まず無料。続ける時だけ。</h2><p>必要な質問数に合わせてチケットを選べます。</p></div>
-      <div class="plans"><div class="plan"><h3>初回</h3><div class="yen">1問無料</div><p>初めての方・1人1回</p></div><div class="plan"><h3>3問チケット</h3><div class="yen">1,200円</div><p>気になることを少しだけ</p></div><div class="plan best"><span class="badge">おすすめ</span><h3>10問チケット</h3><div class="yen">3,000円</div><p>1問あたり300円</p></div></div>
-      <div class="terms">1回につき1校・1テーマ／質問送信後の変更・キャンセル不可</div>
-    </div>
-  </section>
+<section class="services"><div class="wrap servicegrid"><div class="pricebox"><h2 class="boxhead">＼ ご利用料金 ／</h2><div class="pricegrid"><div class="price"><b>初回</b><div class="amount">1問無料</div><small>初めての方・1人1回</small></div><div class="price"><b>3問チケット</b><div class="amount">1,200円</div><small>気になることを少しだけ</small><div class="pay">クレジット決済</div></div><div class="price"><span class="recommend">おすすめ</span><b>10問チケット</b><div class="amount">3,000円</div><small>1問あたり300円</small><div class="pay">クレジット決済</div></div></div></div><div class="consultbox"><div class="monitor">▣</div><h2 class="boxhead">オンライン相談</h2><p>より詳しく相談したい方へ。Q&Aとは別の補助サービスです。</p><a class="cta outline" href="https://jukensoudan-route.github.io/contact/">詳しく見る →</a></div></div></section>
 
-  <section id="consult" class="consult">
-    <div class="shell consultbox">
-      <div><span class="subservice">補助サービス</span><h2>まとめて相談したい方には<br>オンライン相談。</h2><p>Q&Aとは別のサービスです。成績や資料を見ながら、志望校や受験計画をじっくり整理します。</p><div class="fees"><span>基本 15,000円</span><span>60分 10,000円</span><span>30分 6,000円</span></div><a class="consultbtn" href="https://jukensoudan-route.github.io/contact/">オンライン相談を見る</a></div>
-      <img src="https://jukensoudan-route.github.io/assets/online-consultation-screen.webp?v=20260914-new" alt="オンライン相談の実際の画面。お客様側の画面は映りません">
-    </div>
-  </section>
+<section class="faq"><div class="wrap"><div class="title"><h2>よくあるご質問</h2></div><div class="faqlist"><details><summary>どのような質問ができますか？</summary><p>志望校、内申点、実力テスト、私立専願・併願、受験日程など、兵庫県高校受験に関する質問ができます。</p></details><details><summary>回答はどのくらいで届きますか？</summary><p>営業時間内は目安5〜30分です。営業時間は12:00〜24:00、月曜休業です。</p></details><details><summary>支払い方法を教えてください。</summary><p>クレジットカード・電子決済をご利用いただけます。初回の1問は無料です。</p></details></div></div></section>
 
-  <section class="faqs">
-    <div class="shell">
-      <div class="sectionhead"><span class="en">FAQ</span><h2>よくある質問</h2></div>
-      <div class="accordion">
-        <details><summary>本当に初回は無料ですか？</summary><p>はい。初めての方は、1人1回・1問無料で利用できます。</p></details>
-        <details><summary>質問がうまくまとまりません。</summary><p>画面の選択肢に沿って進めるため、最初から文章を作る必要はありません。</p></details>
-        <details><summary>どんなことを質問できますか？</summary><p>志望校、内申点、実力テスト、私立専願・併願、受験日程、学校説明会など、兵庫県高校受験に関する保護者の疑問が中心です。</p></details>
-        <details><summary>回答はどこに届きますか？</summary><p>LINEでお届けします。営業時間は12:00〜24:00、月曜休業です。</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="last">
-    <div class="shell lastbox"><h2>まず、いちばん気になる1問から。</h2><p>初回無料で、ROUTEの回答を確認できます。</p><a class="primary" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">初回無料で1問質問する</a></div>
-  </section>
+<section class="final"><div class="wrap"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問質問する　→</a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
 </main>
-<footer class="footer"><div class="shell footin"><div>兵庫県高校受験 保護者相談室 ROUTE</div><div class="footlinks"><a href="https://jukensoudan-route.github.io/about/">ROUTEについて</a><a href="https://jukensoudan-route.github.io/contact/">お問い合わせ</a></div><div>© 2026 ROUTE</div></div></footer>
-<div class="sticky"><a class="primary" href="https://jukensoudan-route.github.io/route-qa/?v=20260914-new" target="_blank" rel="noopener">初回無料で1問質問する</a></div>
-<script>
-const menu=document.querySelector(".menubtn"),links=document.querySelector(".links");
-menu?.addEventListener("click",()=>{const opened=links.classList.toggle("open");menu.setAttribute("aria-expanded",String(opened))});
-links?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{links.classList.remove("open");menu?.setAttribute("aria-expanded","false")}));
-</script>
+<footer>© 2026 兵庫県高校受験 保護者相談室 ROUTE</footer>
+<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問質問する</a></div>
+</div>
 </body>
 </html>
