@@ -202,6 +202,26 @@ footer{padding:0}
 .brand-panel h2{font-size:clamp(10px,3.35vw,19px)}
 .hyogo-pop{margin:0 3px;padding:1px 5px}
 }
+
+/* Larger reason labels with numbered circles on the left */
+.question-button-label{display:inline;line-height:1.45}
+.question-button-label>span{white-space:nowrap}
+.reasonrow .reason{display:grid;grid-template-columns:44px minmax(0,1fr) 22px;align-items:center;column-gap:7px;padding:13px 10px;text-align:left}
+.reasonrow .reasonnum{grid-column:1;grid-row:1 / span 2;display:grid;place-items:center;width:44px;height:44px;margin:0;border:2px solid #267EE6;border-radius:50%;color:#267EE6;background:#fff;font-size:25px;font-weight:900;line-height:1}
+.reasonrow .reason h3{grid-column:2;grid-row:1;margin:0;font-size:18px;font-weight:900;line-height:1.45}
+.reasonrow .reasonicon{grid-column:3;grid-row:1;margin:0;font-size:20px}
+.reasonrow .reason p{grid-column:2 / 4;grid-row:2;margin:4px 0 0;font-size:11px}
+.reasonrow .pink-heart{color:#ee68a0;font-family:Arial,sans-serif;font-size:29px}
+@media(max-width:700px){
+.reasonrow{grid-template-columns:1fr;gap:8px}
+.reasonrow .reason{grid-template-columns:48px minmax(0,1fr) 32px;padding:10px 14px;column-gap:12px}
+.reasonrow .reasonnum{width:48px;height:48px;font-size:28px}
+.reasonrow .reason h3{font-size:20px}
+.reasonrow .reason h3 br{display:none}
+.reasonrow .reason p{display:none}
+.question-button-label{font-size:clamp(12px,3.5vw,16px)}
+.intro .cta,.final .cta,.sticky .cta{padding-inline:10px;gap:6px}
+}
 </style>
 </head>
 <body>
@@ -211,7 +231,7 @@ footer{padding:0}
 <section class="hero"><img src="assets/route-title-20260915.webp" alt="兵庫県高校受験専門 ROUTE"></section>
 <section class="brand-panel" aria-label="キケルート Q&Aサービス"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><h2>ルートの<span class="hyogo-pop">兵庫</span>県高校受験Q&Aサービス</h2></div></div></section>
 
-<section class="intro"><div class="wrap"><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a></div></section>
+<section class="intro"><div class="wrap"><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span><span class="question-button-label">ご質問はこちらから<span>（初回の１問は無料！）</span></span></a></div></section>
 
 <section class="questions"><div class="wrap"><div class="title"><h2 class="ranking-title">今月の多い質問ランキング</h2></div><div class="qlist">
 <a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">1</span><span class="qtext">内申点が１４０点ですが志望校はどこを目指せますか？</span><span class="qgo">質問する →</span></a>
@@ -221,7 +241,7 @@ footer{padding:0}
 <a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">5</span><span class="qtext">学校説明会や出願に向けて、今から何を準備すればいいですか？</span><span class="qgo">質問する →</span></a>
 </div></div></section>
 
-<section class="reasons"><div class="wrap"><div class="title"><h2>ROUTEを使う3つの理由</h2></div><div class="reasonrow"><div class="reason"><div class="reasonnum">01</div><div class="reasonicon">🎓</div><h3>兵庫県の<br>高校受験に特化</h3><p>地域の制度を踏まえて回答</p></div><div class="reason"><div class="reasonnum">02</div><div class="reasonicon">💬</div><h3>保護者の視点で<br>丁寧に回答</h3><p>ご家庭の状況に合わせます</p></div><div class="reason"><div class="reasonnum">03</div><div class="reasonicon">♥</div><h3>1問から気軽に<br>相談できる</h3><p>まず気になることから</p></div></div></div></section>
+<section class="reasons"><div class="wrap"><div class="title"><h2>ROUTEを使う3つの理由</h2></div><div class="reasonrow"><div class="reason"><div class="reasonnum">01</div><div class="reasonicon">🎓</div><h3>兵庫県の<br>高校受験に特化</h3><p>地域の制度を踏まえて回答</p></div><div class="reason"><div class="reasonnum">02</div><div class="reasonicon">💬</div><h3>保護者の視点で<br>丁寧に回答</h3><p>ご家庭の状況に合わせます</p></div><div class="reason"><div class="reasonnum">03</div><div class="reasonicon pink-heart" aria-label="ピンクのハート">♥</div><h3>1問から気軽に<br>相談できる</h3><p>まず気になることから</p></div></div></div></section>
 
 
 <section class="qna-guide guide-v2" aria-labelledby="guide-heading"><div class="guide-wrap">
@@ -242,10 +262,10 @@ footer{padding:0}
 
 <section class="faq"><div class="wrap"><div class="title"><h2>オンライン相談についてのよくあるご質問</h2></div><div class="faqlist"><details open><summary>どのような相談ができますか？</summary><p>志望校の選び方、内申点、学習の進め方、受験期の保護者の関わり方などを相談できます。成績や資料を見ながら、今後の取り組みを一緒に整理します。</p></details><details open><summary>相談中は自分の顔を映す必要がありますか？</summary><p>お客様の画面は映りません。こちらから資料を画面共有しながらご説明します。</p></details><details open><summary>基本コースと個別相談の違いは何ですか？</summary><p>基本コースは60分の個別相談と個別診断票がセットで15,000円です。個別相談は、必要なテーマを絞って相談でき、60分10,000円・30分6,000円です。</p></details></div></div></section>
 
-<section class="final"><div class="wrap"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
+<section class="final"><div class="wrap"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span><span class="question-button-label">ご質問はこちらから<span>（初回の１問は無料！）</span></span></a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
 </main>
 <footer>© 2026 兵庫県高校受験 保護者相談室 ROUTE</footer>
-<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問だけ質問する</a></div>
+<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span><span class="question-button-label">ご質問はこちらから<span>（初回の１問は無料！）</span></span></a></div>
 </div>
 </body>
 </html>
