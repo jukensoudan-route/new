@@ -37,23 +37,45 @@ footer{padding:18px 0 88px;background:#052e57;color:#dcecff;text-align:center;fo
 @media(max-width:700px){.answergrid{grid-template-columns:1fr}.answerlead{padding:14px}.coursegrid{grid-template-columns:1.2fr .8fr}.course{padding:13px 10px}.course .courseprice{font-size:1.28rem}.course ul{font-size:.68rem}.consultvisuals{grid-template-columns:1fr 1fr;gap:7px}.visualcard{padding:8px}.visualcard h3{font-size:.78rem}.visualcard p{font-size:.65rem}}
 @media(max-width:390px){.coursegrid,.consultvisuals{grid-template-columns:1fr}}
 
+
+/* September 2026 homepage update */
+.hero{padding:0;margin:0;line-height:0;background:#fff}
+.hero img{width:100%;height:auto;max-height:none;object-fit:contain}
+.service-brand{display:flex;justify-content:center;align-items:center;gap:16px;margin:0 auto 18px}
+.service-logo{width:270px;flex-shrink:0;aspect-ratio:3.05;overflow:hidden;background:#fff;border-radius:8px}
+.service-logo img{width:100%;height:auto;transform:translateY(-16%)}
+.service-brand p{margin:0;text-align:left;font-size:clamp(14px,2.1vw,20px);font-weight:800}
+.intro h1 .exam-label{display:block;font-size:.68em;margin-bottom:8px}
+.intro h1 .single-line{display:block;white-space:nowrap;font-size:clamp(14px,4.25vw,40px);letter-spacing:-.05em}
+.intro h1 strong{margin-top:12px}
+.questions .title h2{font-size:clamp(18px,3.3vw,28px)}
+.questions .title h2:before,.questions .title h2:after{content:none}
+.questions .title p{font-size:11px}
+@media(max-width:700px){
+.service-brand{gap:9px}.service-logo{width:42%;max-width:220px}
+.service-brand p{font-size:clamp(11px,3vw,17px)}
+.freein{flex-direction:column}.freein .cta{width:92%;font-size:.88rem}
+}
+
 </style>
 </head>
 <body>
 <div class="page">
 <header><div class="wrap head"><a class="brand" href="#top"><img src="https://jukensoudan-route.github.io/assets/route-logo.webp" alt="ROUTE"><b>兵庫県高校受験 保護者相談室 ROUTE</b></a><button class="menu" aria-label="メニュー">☰</button></div></header>
 <main id="top">
-<section class="hero"><img src="assets/route-title-hero.webp?v=20260914-1" alt="兵庫県高校受験専門 ROUTE"></section>
+<section class="hero"><img src="assets/route-title-20260915.webp" alt="兵庫県高校受験専門 ROUTE"></section>
 
-<section class="intro"><div class="wrap"><div class="eyebrow">兵庫県高校受験・保護者向け</div><h1>高校受験の「これ、うちの場合どう？」を<strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問質問する　→</a></div></section>
+<section class="intro"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><p>ルートの兵庫県高校受験<br class="service-break"> Q&Aサービス</p></div><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a></div></section>
 
-<section class="questions"><div class="wrap"><div class="title"><h2>今、気になっているのはどれですか？</h2></div><div class="qlist">
-<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">この成績で、<br>どの高校まで狙えますか？</span><span class="qgo">質問する →</span></a>
-<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">今の内申点で<br>志望校に足りていますか？</span><span class="qgo">質問する →</span></a>
-<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="qicon">Q</span><span class="qtext">私立専願と公立併願、<br>どちらが合いますか？</span><span class="qgo">質問する →</span></a>
+<section class="questions"><div class="wrap"><div class="title"><h2>今月の質問の多い質問ランキングTOP5</h2><p>※掲載内容は質問例です。実際の月間集計に基づく順位ではありません。</p></div><div class="qlist">
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">1</span><span class="qtext">今の内申点で、志望校を目指せますか？</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">2</span><span class="qtext">実力テストの結果から、受験校をどう選べばいいですか？</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">3</span><span class="qtext">私立専願と公立併願、うちの子にはどちらが合いますか？</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">4</span><span class="qtext">志望校の関関同立への進学実績を教えてください。</span><span class="qgo">質問する →</span></a>
+<a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">5</span><span class="qtext">学校説明会や出願に向けて、今から何を準備すればいいですか？</span><span class="qgo">質問する →</span></a>
 </div></div></section>
 
-<section class="freeband"><div class="wrap freein"><div class="freecopy">初回の1問は、無料です。</div><a class="cta dark" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>今すぐ質問する →</a></div></section>
+<section class="freeband"><div class="wrap freein"><div class="freecopy">初回の1問は、無料です。</div><a class="cta dark" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問だけ質問する →</a></div></section>
 
 
 <section class="qna-guide" aria-label="ROUTE Q&Aの使い方"><div class="wrap"><a class="qna-guide-image" href="assets/qna-how-it-works.webp?v=20260915-1" target="_blank" rel="noopener"><img src="assets/qna-how-it-works.webp?v=20260915-1" alt="項目に沿って選ぶだけで質問でき、自由入力した質問への回答がLINEに届くまでの流れ" loading="lazy" width="1536" height="1024"></a><p class="qna-guide-note">画像をタップすると大きく表示できます</p></div></section>
@@ -70,10 +92,10 @@ footer{padding:18px 0 88px;background:#052e57;color:#dcecff;text-align:center;fo
 
 <section class="faq"><div class="wrap"><div class="title"><h2>よくあるご質問</h2></div><div class="faqlist"><details><summary>どのような質問ができますか？</summary><p>志望校、内申点、実力テスト、私立専願・併願、受験日程など、兵庫県高校受験に関する質問ができます。</p></details><details><summary>回答はどのくらいで届きますか？</summary><p>営業時間内は目安5〜30分です。営業時間は12:00〜24:00、月曜休業です。</p></details><details><summary>支払い方法を教えてください。</summary><p>クレジットカード・電子決済をご利用いただけます。初回の1問は無料です。</p></details></div></div></section>
 
-<section class="final"><div class="wrap"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問質問する　→</a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
+<section class="final"><div class="wrap"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
 </main>
 <footer>© 2026 兵庫県高校受験 保護者相談室 ROUTE</footer>
-<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問質問する</a></div>
+<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank"><span class="lineicon">LINE</span>初回無料で1問だけ質問する</a></div>
 </div>
 </body>
 </html>
