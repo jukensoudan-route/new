@@ -190,6 +190,18 @@ footer{padding:0}
 .services .servicegrid{width:100%}
 .services .pricebox{padding:20px 12px}
 }
+
+/* White identity panel directly below the title image */
+.brand-panel{padding:8px 0;background:#fff;border-bottom:1px solid #d7e6f2}
+.brand-panel .service-brand{margin:0;padding:5px 0;gap:24px;background:#fff}
+.brand-panel h2{margin:0;color:#063e76;white-space:nowrap;font-size:clamp(16px,2.1vw,20px);font-weight:800;line-height:1.7}
+.hyogo-pop{display:inline-block;position:relative;margin:0 4px;padding:1px 7px;background:#ffe449;color:#063e76;border:2px solid #267EE6;border-radius:9px 9px 9px 2px;font-size:1.18em;line-height:1.35;transform:rotate(-5deg)}
+@media(max-width:700px){
+.brand-panel{padding:6px 0}
+.brand-panel .service-brand{gap:3px;padding:2px 0}
+.brand-panel h2{font-size:clamp(10px,3.35vw,19px)}
+.hyogo-pop{margin:0 3px;padding:1px 5px}
+}
 </style>
 </head>
 <body>
@@ -197,8 +209,9 @@ footer{padding:0}
 <header><div class="wrap head"><a class="brand" href="#top"><img src="https://jukensoudan-route.github.io/assets/route-logo.webp" alt="ROUTE"><b>兵庫県高校受験 保護者相談室 ROUTE</b></a><button class="menu" aria-label="メニュー">☰</button></div></header>
 <main id="top">
 <section class="hero"><img src="assets/route-title-20260915.webp" alt="兵庫県高校受験専門 ROUTE"></section>
+<section class="brand-panel" aria-label="キケルート Q&Aサービス"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><h2>ルートの<span class="hyogo-pop">兵庫</span>県高校受験Q&Aサービス</h2></div></div></section>
 
-<section class="intro"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><p>ルートの兵庫県高校受験Q&Aサービス</p></div><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a></div></section>
+<section class="intro"><div class="wrap"><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span>初回無料で1問だけ質問する　→</a></div></section>
 
 <section class="questions"><div class="wrap"><div class="title"><h2 class="ranking-title">今月の多い質問ランキング</h2></div><div class="qlist">
 <a class="qitem" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="qicon">1</span><span class="qtext">内申点が１４０点ですが志望校はどこを目指せますか？</span><span class="qgo">質問する →</span></a>
