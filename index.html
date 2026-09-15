@@ -181,6 +181,15 @@ footer{padding:0}
 .answerexample{padding-top:6px}
 .consulthead h2{font-size:clamp(25px,7vw,32px);padding:12px 8px}
 }
+
+/* Expand the yellow pricing panel to the full section */
+.services{padding:0;background:#ffe449}
+.services .servicegrid{width:100%;max-width:none;margin:0}
+.services .pricebox{width:100%;margin:0;padding:22px max(17px,calc((100% - 850px)/2));border-radius:0;background:#ffe449}
+@media(max-width:700px){
+.services .servicegrid{width:100%}
+.services .pricebox{padding:20px 12px}
+}
 </style>
 </head>
 <body>
