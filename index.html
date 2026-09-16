@@ -245,6 +245,16 @@ footer{padding:0}
 .final,.sticky{background:#06C755}
 .final .online-cta,.sticky .online-cta{background:#fff;color:#087b38;border:2px solid #fff;box-shadow:none}
 @media(max-width:700px){.consult-divider{height:22px}.consultdetail .coursegrid,.consultdetail .consultvisuals{grid-template-columns:minmax(0,1fr)}.consultdetail .course,.consultdetail .visualcard{padding:16px}.online-cta{font-size:clamp(13px,3.8vw,17px)}}
+
+/* Blue reverse brand panel, full prefecture POP, and restored Q&A sticky CTA */
+.brand-panel,.brand-panel .service-brand,.brand-panel .service-logo{background:#267EE6}
+.brand-panel{border-bottom-color:#267EE6}
+.brand-panel h2{color:#fff}
+.brand-panel .service-logo{isolation:isolate}
+.brand-panel .service-logo img{filter:grayscale(1) brightness(.55) contrast(20) invert(1);mix-blend-mode:screen}
+.brand-panel .hyogo-pop{color:#063e76;background:#ffe449;border-color:#fff}
+footer{background:#267EE6;color:#fff}
+.sticky{background:rgba(255,255,255,.95)}
 </style>
 </head>
 <body>
@@ -252,7 +262,7 @@ footer{padding:0}
 <header><div class="wrap head"><a class="brand" href="#top"><img src="https://jukensoudan-route.github.io/assets/route-logo.webp" alt="ROUTE"><b>高校受験相談室 ROUTE</b></a><button class="menu" aria-label="メニュー">☰</button></div></header>
 <main id="top">
 <section class="hero"><img src="assets/route-title-20260915.webp" alt="兵庫県高校受験専門 ROUTE"></section>
-<section class="brand-panel" aria-label="キケルート Q&Aサービス"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><h2>ルートの<span class="hyogo-pop">兵庫</span>県高校受験Q&Aサービス</h2></div></div></section>
+<section class="brand-panel" aria-label="キケルート Q&Aサービス"><div class="wrap"><div class="service-brand"><div class="service-logo"><img src="assets/kikeroute-logo.webp" alt="キケルート" width="1774" height="887"></div><h2>ルートの<span class="hyogo-pop">兵庫県</span>高校受験Q&Aサービス</h2></div></div></section>
 
 <section class="intro"><div class="wrap"><h1><span class="exam-label">高校受験の</span><span class="single-line">「うちの子の受験、本当に大丈夫？」</span><strong>LINEで1問から。</strong></h1><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span><span class="question-button-label">ご質問はこちら(初回無料)</span></a></div></section>
 
@@ -288,7 +298,7 @@ footer{padding:0}
 <section class="final"><div class="wrap"><a class="cta online-cta" href="https://jukensoudan-route.github.io/contact/"><span class="lineicon">LINE</span><span>オンライン相談はこちらから</span></a><p>兵庫県の子どもたちの未来を、保護者と一緒に考えます。</p></div></section>
 </main>
 <footer>© 2026 高校受験相談室 ROUTE</footer>
-<div class="sticky"><a class="cta online-cta" href="https://jukensoudan-route.github.io/contact/"><span class="lineicon">LINE</span><span>オンライン相談はこちらから</span></a></div>
+<div class="sticky"><a class="cta" href="https://jukensoudan-route.github.io/route-qa/" target="_blank" rel="noopener"><span class="lineicon">LINE</span><span class="question-button-label">ご質問はこちら(初回無料)</span></a></div>
 </div>
 </body>
 </html>
